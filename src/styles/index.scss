@@ -1,13 +1,35 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-/* 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8c705f;
+    font-family: 'Hachi Maru Pop', cursive;
+    font-size: medium;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.audioList{
+    background-color: #1e1a1d;
+    margin-top: 3rem;
+    padding: 1rem;
+    width: 20rem;
+    border-radius: 15px;
+}
 
-*/
+.listItem{
+    padding: 2rem;
+}
+
+.item{
+    list-style-type: none;
+    color: #e5f2c9;
+    padding-inline-start: 0;
+}
+
+.controlBtn{
+    display: flex;
+    justify-content: center;
+    color: antiquewhite;
+    padding-bottom: 3rem;
+}

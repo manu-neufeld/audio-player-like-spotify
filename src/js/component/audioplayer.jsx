@@ -55,19 +55,19 @@ export function AudioComponent() {
 		return "loading";
 	} else {
 		return (
-			<div className="audio-list">
-				<ul>{myListgnerator()}</ul>
+			<div className="audioList">
+				<ul className="listItem">{myListgnerator()}</ul>
 				<audio id="myAudioTag">
 					<source src={songURL + song} />
 				</audio>
 				<div className="controlBtn">
 					<button className="playBtn" onClick={() => myAudio.play()}>
-						Play
+						<i className="fas fa-play" />
 					</button>
 					<button
 						className="pauseBtn"
 						onClick={() => myAudio.pause()}>
-						Pause
+						<i className="fas fa-pause" />
 					</button>
 					<button
 						onClick={() => {
@@ -75,7 +75,7 @@ export function AudioComponent() {
 							myAudio.load();
 							myAudio.play();
 						}}>
-						<i className="fas fa-backward" />
+						<i className="fas fa-fast-backward" />
 					</button>
 					<button
 						onClick={() => {
@@ -83,7 +83,7 @@ export function AudioComponent() {
 							myAudio.load();
 							myAudio.play();
 						}}>
-						<i className="fas fa-forward" />
+						<i className="fas fa-fast-forward" />
 					</button>
 				</div>
 			</div>
